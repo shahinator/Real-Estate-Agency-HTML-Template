@@ -9,7 +9,7 @@ This is very Real-Estate-HTML-Template. I used only HTML, CSS and CSS3 Some Anim
 - **FREE** - Generate beautiful terminal gifs with a simple scripting language
 
 ## Live URL
-- https://shahinator.github.io/Real-Estate-HTML-Template/
+- https://shahinator.github.io/Real-Estate-Agency-HTML-Template/
 
 
 
