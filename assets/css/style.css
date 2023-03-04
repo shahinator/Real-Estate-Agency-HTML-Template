@@ -1,0 +1,763 @@
+/*
+Template Name: Real Estate Agency
+Template URL: https://www.realestateagency.com
+Author Name: Brainnest consulting
+Author URL: https://www.brainnest.consulting/
+Version: 1.0
+================
+Index
+================
+1. Basic Typhography 
+2. Body Styling 
+3. Header Styling 
+    3.1  Header Top Stylying
+    3.2 Main Header Stylying
+    3.3 Dropdown Menu Stylying
+4. Banner Styling
+5. Our Property
+6. About Us Styling
+7. Testimonial Styling
+8. Call to Action Styling
+9. Blog Styling
+10. Footer Styling
+*/
+/* 
+================
+1. Basic Typhography  
+================*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4{
+    font-weight: 900;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 18px;
+}
+
+a{ 
+    transition: all .3s ease-in-out; 
+    text-decoration: none;  
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.button{
+    padding: 30px 0;
+}
+.button a{
+    color: #ffffff;
+    background-color: #c9180b;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    text-align: center;
+    overflow: hidden;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.button a:before, .button a:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-radius: 0px;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.button a:hover:before {
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.button a:hover:after {
+    width: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.button a.style-two{
+    background: transparent;
+    border: 1px solid #c9180b;
+    margin-left: 15px;
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInLeft2 {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInLeft3 {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInLeft4 {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+} 
+/*
+================
+2. Body Styling 
+================*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+}
+p{
+    margin: 15px 0;
+}
+.section{
+    padding: 80px 0;
+}
+.section h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+}
+.section h2.center:after{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    content: "";
+    background: #c9180b;
+    bottom: 0;
+    margin: 0 auto;
+}
+.section h2.left:after{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    content: "";
+    background: #c9180b;
+    bottom: 0;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.flex-class{
+    display: flex;
+    justify-content: space-between;  
+}
+/* 
+================
+3.1  Header Top Stylying
+================*/
+.header-top-area{
+    padding: 15px 0;
+    background: #000000;
+}
+.inner-header-top{
+    align-items: center;
+}
+.inner-header-top .header-top-left{
+    color: #ffffff;
+}
+.inner-header-top .header-top-right ul li{
+    margin: 5px;
+}
+.inner-header-top .header-top-right ul li a{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;   
+    border: 1px solid #c9180b;
+    background: #c9180b;
+    color: #ffffff;
+}
+.inner-header-top .header-top-right ul li a:hover{ 
+    transition: all .3s ease-in-out;   
+    border: 1px solid #dddddd;
+    background: transparent;
+}
+/* 
+================
+3.2. Main Header Stylying
+================*/
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.logo a{
+    line-height: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;  
+}
+nav ul li a{  
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    padding: 36px 30px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    font-weight: 600;
+}
+nav ul li a:after{  
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    margin: 0 auto;
+    z-index: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+nav ul li.active a,    
+nav ul li:hover a{    
+    background-color: #c9180b;
+    color: #ffffff;
+}
+nav ul li.active a:after{    
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+nav ul li{
+    position: relative;  
+}
+/* 
+================
+3.3 Dropdown Menu Stylying
+================*/
+nav ul li ul{
+    position: absolute;
+    top: 150%;  
+    display: block;
+    width: 100%;
+    background: #c9180b;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+nav ul li:hover ul{
+    top: 100%;  
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+nav ul li ul li{
+    border-top: 1px solid #ffffff;
+}
+nav ul li ul li a{
+    padding: 10px 30px;
+    transition: all .3s ease-in-out;
+    font-weight: 400;
+    font-size: 14px;
+}
+nav ul li ul li a:hover{    
+    transition: all .3s ease-in-out;
+    background: #000000;
+    padding-left: 35px;
+}
+nav ul li ul li a:after{
+   display: none;
+}
+/* 
+================
+4. Banner Styling
+================*/
+.banner-area{
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+}
+.banner-area h3{
+    color: #e5e7eb;
+    font-weight: 500;
+}
+.banner-area h1{
+    color: #e5e7eb;
+    padding-right: 27vw;
+    line-height: 1.3;
+    margin: 10px 0 23px;
+}
+.banner-area h1 span{
+    color: #c9180b;
+}
+.banner-area p{
+    color: #ffffff;
+    padding-right: 33vw;
+}
+/* 
+================
+5. Our Property
+================*/
+.our-property p{
+    padding: 0 8vw;
+}
+.property-list{
+    display: flex;
+    justify-content: center;  
+}
+.single-property{
+    margin: 15px;
+}
+.single-property .image{
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+.single-property .image:before{
+    position: absolute;
+    height: 97%;
+    width: 50%;
+    content: '';
+    background: #ededed;
+    top: 15px;
+    left: -2px;
+    z-index: -1;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out; 
+}
+.single-property .image:after{
+    position: absolute;
+    height: 70%;
+    width: 78%;
+    content: '';
+    background: #dddddd;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(1deg);
+    transition: all .3s ease-in-out; 
+}
+.single-property .image:hover:after,
+.single-property .image:hover:before{
+    background: #c9180b;
+    transition: all .3s ease-in-out; 
+}
+.single-property .image a{
+    line-height: 0;
+    display: block;
+    padding: 10px;
+    border:5px solid #ffffff;
+}
+.single-property .image .deal-price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px 0;
+    box-shadow: 1px 1px 5px #00000057;
+    z-index: 1;
+    background: #c9180b;
+    transform: translateY(30px);
+    line-height: 1.7;
+}
+.single-property .image a img{
+    width: 100%;    
+    transition: all .3s ease-in-out; 
+}
+.single-property .image:hover img{
+    transition: all .3s ease-in-out; 
+    transform: scale(1);
+}
+.single-property .content{
+    padding: 15px;
+}
+.single-property .content h3 a{
+    display: block;
+    color: #000000;   
+    transition: all .3s ease-in-out;
+}
+.single-property .content h3 a .deal-price{
+    display: block;
+    color: #000000;   
+    transition: all .3s ease-in-out;
+}
+.single-property .content h3 a:hover{
+    color: #c9180b; 
+    transition: all .3s ease-in-out;  
+}
+/* 
+================
+6. About Us Styling
+================*/
+.about-us{
+    background: #ededed;
+}
+.about-us .about-content {
+    margin-right: 30px;
+}
+.about-us .about-image {
+    position: relative;
+}
+.about-us .about-image:after {
+    background: rgba(0, 0, 0, 0) url(../images/shadow.png) no-repeat scroll 0 0;
+    bottom: -22px;
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+/* 
+================
+7. Testimonial Styling
+================*/
+.testimonial-area p{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    position: relative;
+    padding: 0 60px;
+}
+.testimonial-area p:before{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 80px;
+    color: #c9180b;
+    content: "“";
+    width: 50px;
+    height: 50px;
+}
+.testimonial-area p:after{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+    color: #c9180b;
+    content: "”";
+    width: 50px;
+    height: 50px;
+}
+.testimonial-area .author strong{
+    font-style: italic;
+    font-size: 30px;
+}
+/* 
+================
+8. Call to Action Styling
+================*/
+.call-to-action{
+    background: #c9180b;
+    background: url(../images/call-to-action.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+.call-to-action:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    z-index: -1;
+}
+.call-to-action .button a{
+    border: 1px solid #ffffff;
+}
+.call-to-action .inner-call-content{
+    color: #ffffff;
+}
+.call-to-action .inner-call-content p{
+    padding-right: 5vw;
+}
+/* 
+================
+9. Blog Styling
+================*/
+.latest-blog .single-blog{
+    margin: 15px;
+}
+.latest-blog .single-blog .image{
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+.latest-blog .single-blog .image a{
+    display: block;
+    line-height: 0;
+}
+.latest-blog .single-blog .image a img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.latest-blog .single-blog .image:hover img{
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);    
+}
+.latest-blog .single-blog h3 a{
+    font-size: 24px;
+    color: #000000;
+    line-height: 1.4;
+    margin: 30px 0 15px;
+    display: block;
+    transition: all .3s ease-in-out;
+    font-weight: 400;
+}
+.latest-blog .single-blog h3 a:hover{
+    color: #c9180b; 
+    transition: all .3s ease-in-out;  
+}
+.latest-blog .single-blog p{
+    margin-bottom: 0;
+}
+.latest-blog .single-blog .blog-meta{
+    background: #f5f5f5;
+    font-style: inherit;
+    font-size: 15px;
+}
+.latest-blog .single-blog .blog-meta ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.latest-blog .single-blog .blog-meta ul li:first-child{
+    border-right: 1px solid #dddddd;
+}
+.latest-blog .single-blog .blog-meta ul li a{
+    color: #000000;
+    transition: all .3s ease-in-out; 
+    font-style: italic;
+}
+.latest-blog .single-blog .blog-meta ul li a:hover{
+    color: #c9180b; 
+    transition: all .3s ease-in-out;  
+}
+.latest-blog .single-blog .button{
+    padding-top: 20px;
+}
+.latest-blog .single-blog .button a{
+    color: #c9180b; 
+    transition: all .3s ease-in-out; 
+}
+.latest-blog .single-blog .button a:hover{
+    color: #ffffff; 
+    transition: all .3s ease-in-out; 
+}
+/* 
+================
+10. Footer Styling
+================*/
+footer{
+    background: #1f2937;
+}
+footer.section{
+    padding-bottom: 40px;
+}
+footer .single-footer{
+    width: 33%;
+}
+footer .single-footer{
+    width: 33%;
+    color: #ffffff;
+}
+footer .single-footer:nth-child(2){
+    padding: 0 30px;
+}
+footer .single-footer .widget-title{
+    position: relative;
+    padding: 0 0 10px;
+    margin: 0 0 30px; 
+    font-size: 28px;   
+}
+footer .single-footer .widget-title:after{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    content: "";
+    background: #dddddd;
+    bottom: 0;
+    margin: 0 auto;
+}
+footer .single-footer .social-media ul{
+    display: flex;
+    justify-content:left;  
+}
+footer .single-footer .social-media ul li{
+    margin: 5px;
+}
+footer .single-footer .social-media ul li a{
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ededed;
+    display: block;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .social-media ul li a:hover{ 
+    transition: all .3s ease-in-out;   
+    border: 1px solid #c9180b;
+    background: #c9180b;
+    color: #ffffff;
+}
+footer .single-footer .top-places ul li a{
+    margin-left: 20px;
+    color: #ffffff;
+    padding: 5px 0;
+    display: block;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .top-places ul li a:hover{
+    color: #c9180b;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .top-places ul li a:before{   
+    position: absolute;
+    content: "";
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    background: #c9180b;
+    border-radius: 100%;
+    top: 14px;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .contact-info ul li{
+    margin-left: 20px;
+    color: #ffffff;
+    padding: 5px 0;
+    display: block;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .contact-info ul li a{
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .contact-info ul li a:hover{
+    color: #c9180b;
+    transition: all .3s ease-in-out;
+}
+footer .single-footer .contact-info ul li:before{   
+    position: absolute;
+    content: "";
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    background: #c9180b;
+    border-radius: 100%;
+    top: 14px;
+    transition: all .3s ease-in-out;
+}
+.copytight{
+    padding-top: 40px;
+    margin-top: 40px;
+    color: #ffffff;
+    border-top: 1px solid #777777;
+}
+.back-to-top a{    
+    color: #ffffff;
+    font-size: 24px;
+    display: inline-block;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px dotted #ededed;
+}
